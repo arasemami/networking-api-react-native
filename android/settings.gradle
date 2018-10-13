@@ -1,0 +1,3 @@
+rootProject.name = 'myfetching'
+
+include ':app'
