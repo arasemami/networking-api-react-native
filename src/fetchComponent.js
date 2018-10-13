@@ -40,8 +40,7 @@ class FetchComponent extends Component {
         })
        
         clearInterval(timer);
-        console.log("Timer is stop!")
-        ;
+        console.log("Timer is stop!");
 
     }
 
@@ -62,3 +61,10 @@ class FetchComponent extends Component {
 }
  
 export default FetchComponent;
+
+
+
+
+
+
+

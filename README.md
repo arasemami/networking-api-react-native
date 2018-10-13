@@ -31,3 +31,26 @@ fetch('https:api.example.com/api/v1/login', {
 });
 
 ```
+
+or in some other way:
+
+```
+const url = 'http://api.example.com/api/v1/login';
+
+const header= {
+    method: 'GET',
+    headers: {
+        "Authorization": config.token,
+        "Accept":"application/json", 
+        "Token": 'XXXXXXXXXXXXXXXXXXXXXXXX'
+    }
+}
+
+
+fetch(url, header)
+    .then((res) => res.json())
+    .then((resJson) => {
+        console.log(resJson.data)
+    })
+
+```
